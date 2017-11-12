@@ -8,4 +8,9 @@
 * [设计部分](designDocs/README.md)
   * [Data Model](designDocs/dataModel/README.md)
     * [Person](designDocs/dataModel/Person.md)
+    * [Letter](designDocs/dataModel/Letter.md)
 * [API文档](apiDocs/README.md)
+* [需求部分](requireDocs/README.md)
+  * [大体](requireDocs/general.md)
+  * [第一次会议](requireDocs/firstCouncil.md)
+
