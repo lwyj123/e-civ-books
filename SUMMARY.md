@@ -4,7 +4,6 @@
 * [First Chapter](chapter1.md)
 * [进度记录](jin-du-ji-lu.md)
 * [项目数据结构设计](xiang-mu-shu-ju-jie-gou-she-ji.md)
-
 * [设计部分](designDocs/README.md)
   * [Data Model](designDocs/dataModel/README.md)
     * [Person](designDocs/dataModel/Person.md)
@@ -18,5 +17,5 @@
 * [需求部分](requireDocs/README.md)
   * [大体](requireDocs/general.md)
   * [第一次会议](requireDocs/firstCouncil.md)
-  * [第二次扯淡](requireDocs/secondCouncil.md)
+  * [关于团队与战斗系统初稿](requireDocs/guan-yu-tuan-dui-yu-zhan-dou-xi-tong-chu-gao.md)
 
