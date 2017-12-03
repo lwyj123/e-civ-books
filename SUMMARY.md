@@ -13,6 +13,7 @@
     * [Skill](designDocs/dataModel/Skill.md)
     * [Action](designDocs/dataModel/Action.md)
     * [Buffer](designDocs/dataModel/Buffer.md)
+    * [Belong](designDocs/dataModel/Belong.md)
 * [API文档](apiDocs/README.md)
 * [需求部分](requireDocs/README.md)
   * [大体](requireDocs/general.md)
