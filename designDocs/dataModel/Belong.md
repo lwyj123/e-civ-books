@@ -1,16 +1,13 @@
 ```Json
-Belong:{
-    belong_id:2,
+Belonging:{
+    owner_id:[],
     type: 'food',
     des: 'mdzz use this to fullfill',
-    result: {'增加体力值之类的'},
+    result: {health:2},
     targetType:[目标类型],
-    state: '是否可用之类的状态。。。。'
-    meta: {
-        equator: {
-            bread:5,
-            butter: 3
-        }
+    state: 'active'
+    needs: {
+    	
     }
 }
 
