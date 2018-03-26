@@ -29,10 +29,27 @@
 <h6 id="login">登录</h6>
 
 > POST /users/login
+
+**参数**
 ```JSON
 {
 	"username": "admin",
 	"password": "admin"
+}
+```
+
+**返回**
+```JSON
+{
+    "name": "admin",
+    "username": "admin",
+    "person_id": null,
+    "meta": {
+        "age": 22,
+        "sex": "male"
+    },
+    "id": "5ab89a49e98e131c9180c020",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWRtaW4iLCJ1c2VybmFtZSI6ImFkbWluIiwicGVyc29uX2lkIjpudWxsLCJtZXRhIjp7ImFnZSI6MjIsInNleCI6Im1hbGUifSwiaWQiOiI1YWI4OWE0OWU5OGUxMzFjOTE4MGMwMjAiLCJpYXQiOjE1MjIwNDg1NTksImV4cCI6MTUyMjEzNDk1OX0.JR3A4uWMEbYoKeCQzT3VBxu1RcIWrpiDSNamWcRDrac"
 }
 ```
 
