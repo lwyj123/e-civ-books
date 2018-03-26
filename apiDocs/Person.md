@@ -1,64 +1,115 @@
 ## Person
 
 1. 创建角色
-    1. [创建角色](#create_person)
+    1. [创建角色](#create)
 2. 查看角色
-    1. [查看角色](#get_all_person)
-    2. [查看角色特定信息](#get_person_info)
+    1. [查看角色](#info-by-id)
 3. 删除角色
-    1. [删除角色](#delete_person)
+    1. [删除角色](#delete)
 4. 更新角色        
-    1. [更新角色信息](#update_person_info)
+    1. [更新角色信息](#update)
 
 
 #### 创建角色
 
-<h6 id="create_preson">创建角色</h6>
+<h6 id="create">创建角色</h6>
 
 > POST /persons
 
-**parameters**
+**参数**
+```JSON
+{
+	"name": "管理员3",
+	"meta": {
+		"sex": "male"
+	}
+}
+```
 
-| parameters | 描述 | 是否必须 | 数据类型 | 默认值 |
-| ---- | ---- | ---- | ---- | --- |
-| user_id | 用户id | true | string | null |
-| name | 角色名 | true | string |  |
-| meta | 角色附加信息 | true | object | {age: null, sex: 'female'}
+**返回**
+```JSON
+{
+    "updated_at": "2018-03-26T04:30:03.104Z",
+    "created_at": "2018-03-26T04:30:03.104Z",
+    "name": "管理员3",
+    "user_id": "5ab8750b62a6e611b75d6c83",
+    "attributes": {
+        "str": 1,
+        "dex": 1,
+        "con": 1,
+        "int": 1,
+        "wis": 1,
+        "cha": 1
+    },
+    "status": [],
+    "conditions": {
+        "health": 100,
+        "maxHealth": 100,
+        "stamina": 120,
+        "maxStamina": 120
+    },
+    "items": []
+}
+```
 
 #### 查看角色
 
-<h6 id="get_all_person">查看角色</h6>
+<h6 id="info-by-id">根据id查看角色</h6>
 
 > GET /persons/:id
 
-**parameters**
+**参数**
 
-| parameters | 描述 | 是否必须 | 默认值 | 结果 |
-| ---- | ---- | ---- | ---- | --- |
-| id | 用户id | true | null | 用户添加角色 |
 
-<h6 id="get_person_info">查看角色特定信息</h6>
-
-待议
+**返回**
+```JSON
+{
+    "updated_at": "2018-03-26T04:30:03.104Z",
+    "created_at": "2018-03-26T04:30:03.104Z",
+    "name": "管理员3",
+    "user_id": "5ab8750b62a6e611b75d6c83",
+    "attributes": {
+        "str": 1,
+        "dex": 1,
+        "con": 1,
+        "int": 1,
+        "wis": 1,
+        "cha": 1
+    },
+    "status": [],
+    "conditions": {
+        "health": 100,
+        "maxHealth": 100,
+        "stamina": 120,
+        "maxStamina": 120
+    },
+    "items": [],
+    "id": "5ab87749730e62122dcc9f92"
+}
+```
 
 #### 删除角色
 
-<h6 id="delete_person">删除角色</h6>
+<h6 id="delete">删除角色</h6>
 
 > DELETE /persons/:id
 
 删除角色，并更新用户角色
 
+**参数**
+无
+
+**返回**
+204
+
 #### 更新角色
 
-<h6 id="update_person_info">更新角色信息</h6>
+<h6 id="update">更新角色信息</h6>
 
-> UPDATE /persons/:id
+> PUT /persons/:id
 
-| parameters | 描述 | 是否必须 | 数据类型 | 默认值 |
-| ---- | ---- | ---- | ---- | --- |
-| name | 角色名 | true | string |  |
-| meta | 角色附加信息 | true | object | {age: null, sex: 'female'}
-| conditions | 角色状态 | false | object | {health: 100,maxHealth: 100, stamina: 100,maxStamina: 100} |
-| attributes | 角色属性 | false | object | |
-| status | 角色。。 | false | Buffer | |
+**参数**
+
+
+**返回**
+
